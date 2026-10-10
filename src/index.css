@@ -1,0 +1,1235 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter:Medium";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter:Regular";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter:Semi Bold";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Noto Sans JP:Regular";
+  src: url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans JP:Bold";
+  src: url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Noto Sans Math:Regular";
+  src: url("https://static.figma.com/font/NotoSansMath-Regular_1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans SC:Bold";
+  src: url("https://static.figma.com/font/NotoSansSC-VF_2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Noto Sans SC:Medium";
+  src: url("https://static.figma.com/font/NotoSansSC-VF_2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Noto Sans SC:Regular";
+  src: url("https://static.figma.com/font/NotoSansSC-VF_2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans Symbols2:Regular";
+  src: url("https://static.figma.com/font/NotoSansSymbols2-Regular_5") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans Symbols:Regular";
+  src: url("https://static.figma.com/font/NotoSansSymbols-VF_2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans:Regular";
+  src: url("https://static.figma.com/font/NotoSans-VF_3") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans:Bold";
+  src: url("https://static.figma.com/font/NotoSans-VF_3") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Noto Sans:SemiBold";
+  src: url("https://static.figma.com/font/NotoSans-VF_3") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "PingFang SC:Medium";
+  src: url("/fonts/PingFang_SC-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins:Medium";
+  src: url("/fonts/Poppins-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins:Regular";
+  src: url("/fonts/Poppins-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins:SemiBold";
+  src: url("/fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Source Han Sans CN:Bold";
+  src: url("/fonts/Source_Han_Sans_CN-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Source Han Sans CN:Medium";
+  src: url("/fonts/Source_Han_Sans_CN-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Source Han Sans CN:Regular";
+  src: url("/fonts/Source_Han_Sans_CN-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1e2436;
+  background: #15171e;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[class*=":Regular"] {
+  font-weight: 400 !important;
+}
+
+[class*=":Medium"] {
+  font-weight: 500 !important;
+}
+
+[class*=":Semi_Bold"],
+[class*=":SemiBold"],
+[class*=":Semibold"] {
+  font-weight: 600 !important;
+}
+
+[class*=":Bold"] {
+  font-weight: 600 !important;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.app-viewport {
+  --content-center-offset: 108px;
+
+  width: 100%;
+  height: 100dvh;
+  min-width: 0;
+  overflow: hidden;
+  background: #15171e;
+  transition: background-color 160ms ease;
+}
+
+.app-viewport[data-theme="light"] {
+  background: #f4f5fb;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] {
+  --content-center-offset: 32px;
+}
+
+.app-viewport[data-page="form"] {
+  --content-center-offset: 0px;
+}
+
+.app-viewport [data-name="Menu"] {
+  transition: width 180ms ease;
+}
+
+.app-viewport [data-name="Menu"] > [data-name="logo"] [data-name="common-linear-menu"] {
+  display: none;
+}
+
+.sidebar-toggle-host {
+  position: relative;
+  display: flex;
+  flex: none;
+}
+
+.sidebar-toggle {
+  position: relative;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.sidebar-toggle:hover,
+.sidebar-toggle:focus-visible {
+  background: #eaebf1;
+}
+
+.sidebar-toggle:focus-visible {
+  outline: 2px solid #646e87;
+  outline-offset: 2px;
+}
+
+.sidebar-toggle img {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+.sidebar-toggle::after {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 60;
+  width: max-content;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #1e2436;
+  color: #fff;
+  content: attr(data-tooltip);
+  font-family: "PingFang SC:Regular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-2px);
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease;
+}
+
+.sidebar-toggle:hover::after,
+.sidebar-toggle:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] {
+  width: 64px !important;
+  overflow: hidden;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] > [data-name="logo"] {
+  width: 40px !important;
+  padding: 16px 8px 12px !important;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] > [data-name="logo"] > div {
+  flex: none !important;
+  min-width: 0 !important;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-name="Logo"] {
+  width: 24px !important;
+}
+
+.app-viewport [data-name="Menu"] [data-name="Logo"],
+.app-viewport [data-name="Menu"] [data-name="Logo"] * {
+  transition: none !important;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-name="Logo"] > [data-name="Group"] > [data-name="Group"]:first-child {
+  inset: 8.33% 10.68% 8.33% 10.42% !important;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-name="Logo"] > [data-name="Group"] > [data-name="Group"]:last-child {
+  display: none;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] > [data-name="Navigation"] {
+  width: 40px !important;
+  overflow-x: hidden !important;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-name="navigation-item-1st-level"] {
+  width: 40px !important;
+  min-width: 40px !important;
+  padding-right: 0 !important;
+  overflow: hidden;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-name="navigation-item-1st-level"] > [data-name="Content"] {
+  width: 40px !important;
+  min-width: 40px !important;
+  flex: none !important;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-name="navigation-item-1st-level"] [data-name="Icon"] {
+  padding: 8px 12px !important;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] > :last-child {
+  width: 40px !important;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-name="tabs-capsule-cell"] {
+  min-width: 0 !important;
+  padding-right: 2px !important;
+  padding-left: 2px !important;
+  overflow: hidden;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-theme-option] p {
+  font-size: 0;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-theme-option] p::after {
+  font-size: 12px;
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-theme-option="dark"] p::after {
+  content: "暗";
+}
+
+.app-viewport[data-sidebar-collapsed="true"] [data-name="Menu"] [data-theme-option="light"] p::after {
+  content: "亮";
+}
+
+.prototype-message {
+  left: calc(50% + var(--content-center-offset));
+  transition: left 180ms ease;
+}
+
+.prototype-message > [data-name="message"] {
+  box-shadow:
+    0 2px 2px rgb(0 0 0 / 5%),
+    0 6px 8px rgb(0 0 0 / 10%);
+}
+
+.app-viewport [data-name="PageHeader"],
+.app-viewport [data-name="01 顶部品牌栏"] {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 30;
+  transition:
+    background-color 160ms ease,
+    backdrop-filter 160ms ease;
+}
+
+.app-viewport[data-header-scrolled="true"] [data-name="PageHeader"],
+.app-viewport[data-header-scrolled="true"] [data-name="01 顶部品牌栏"] {
+  background: rgb(255 255 255 / 80%) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.app-viewport[data-header-scrolled="true"] [data-name="PageHeader"] [data-name="input-search"],
+.app-viewport[data-header-scrolled="true"] [data-name="PageHeader"] [data-name="Icon-item"] {
+  background: #f3f3f7 !important;
+}
+
+.app-viewport [data-node-id="1:23045"],
+.app-viewport [data-node-id="1:21934"] {
+  padding-top: 76px !important;
+}
+
+.app-viewport [data-node-id="1000:52649"] {
+  padding-top: 76px !important;
+}
+
+.app-viewport [data-node-id="1054:58290"] {
+  padding-top: 56px;
+}
+
+.light-rebuild,
+.light-rebuild > [data-name="详情页"],
+.light-rebuild > [data-name="表单页-填写类-方案2"] {
+  width: 100%;
+  height: 100%;
+}
+
+.app-viewport[data-theme="light"] .light-detail-screen [data-node-id="1012:46225"] {
+  padding: 76px 20px 84px !important;
+}
+
+.app-viewport[data-theme="light"] .light-form-screen [data-node-id="626:21299"] {
+  padding-top: 56px;
+  padding-bottom: 88px;
+  scroll-padding-bottom: 88px;
+}
+
+.app-viewport[data-theme="light"] .light-form-screen [data-node-id="1054:65319"] {
+  width: 960px;
+  max-width: calc(100% - 40px);
+}
+
+.light-detail-screen [data-name="anchor-item-1st-level"] {
+  cursor: pointer;
+}
+
+.light-detail-screen [data-name="anchor-item-1st-level"] > div {
+  color: #646e87 !important;
+  font-weight: 400 !important;
+}
+
+.light-detail-screen [data-name="anchor-item-1st-level"] > .absolute {
+  display: none;
+}
+
+.light-detail-screen[data-active-section="basic"] [data-name="anchor-item-1st-level"]:nth-child(1),
+.light-detail-screen[data-active-section="business"] [data-name="anchor-item-1st-level"]:nth-child(2),
+.light-detail-screen[data-active-section="transactions"] [data-name="anchor-item-1st-level"]:nth-child(3),
+.light-detail-screen[data-active-section="banking"] [data-name="anchor-item-1st-level"]:nth-child(4),
+.light-detail-screen[data-active-section="additional"] [data-name="anchor-item-1st-level"]:nth-child(5) {
+  color: #1e2436;
+  font-weight: 500;
+}
+
+.light-detail-screen[data-active-section="basic"] [data-name="anchor-item-1st-level"]:nth-child(1) > div,
+.light-detail-screen[data-active-section="business"] [data-name="anchor-item-1st-level"]:nth-child(2) > div,
+.light-detail-screen[data-active-section="transactions"] [data-name="anchor-item-1st-level"]:nth-child(3) > div,
+.light-detail-screen[data-active-section="banking"] [data-name="anchor-item-1st-level"]:nth-child(4) > div,
+.light-detail-screen[data-active-section="additional"] [data-name="anchor-item-1st-level"]:nth-child(5) > div {
+  color: #1e2436 !important;
+  font-weight: 500 !important;
+}
+
+.light-detail-screen[data-active-section="basic"] [data-name="anchor-item-1st-level"]:nth-child(1)::before,
+.light-detail-screen[data-active-section="business"] [data-name="anchor-item-1st-level"]:nth-child(2)::before,
+.light-detail-screen[data-active-section="transactions"] [data-name="anchor-item-1st-level"]:nth-child(3)::before,
+.light-detail-screen[data-active-section="banking"] [data-name="anchor-item-1st-level"]:nth-child(4)::before,
+.light-detail-screen[data-active-section="additional"] [data-name="anchor-item-1st-level"]:nth-child(5)::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 24px;
+  border-radius: 2px;
+  background: #1e2436;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.light-detail-screen [data-name="内容区域"] {
+  scroll-margin-top: 76px;
+}
+
+.app-viewport[data-theme="light"] > [data-name="首页"],
+.app-viewport[data-theme="light"] > [data-name="列表页"],
+.app-viewport[data-theme="light"] > [data-name="详情页"],
+.app-viewport[data-theme="light"] > [data-name="表单页-填写类-方案2"] {
+  background-color: #f4f5fb !important;
+}
+
+.app-viewport[data-theme="light"] [class~="bg-[#f0f1f7]"] {
+  background-color: #f4f5fb !important;
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] {
+  background: #fff;
+  border-right: 1px solid #e3e6ed;
+}
+
+.app-viewport[data-theme="light"] [data-name="PageHeader"] {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1:22935"] {
+  display: none;
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1:23045"],
+.app-viewport[data-theme="light"] [data-node-id="1:21934"] {
+  padding: 76px 20px 20px !important;
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1:21934"] {
+  padding-bottom: 0 !important;
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1000:52649"] {
+  padding: 76px 20px 96px !important;
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1000:53551"] {
+  width: 120px;
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1000:53555"] {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1054:58292"] {
+  flex: 0 1 960px;
+  width: 960px;
+  max-width: calc(100% - 40px);
+  padding: 20px 0 96px !important;
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1054:58387"] {
+  box-shadow:
+    0 2px 4px rgb(18 50 108 / 1%),
+    0 8px 16px rgb(18 50 108 / 2%);
+}
+
+.app-viewport[data-theme="light"] [data-node-id="1054:65850"] {
+  width: 900px;
+  max-width: calc(100% - 60px);
+}
+
+.app-viewport[data-theme="light"] [class~="bg-white"][class~="border-[#edeef3]"][class~="rounded-[8px]"] {
+  box-shadow:
+    0 2px 4px rgb(18 50 108 / 1%),
+    0 8px 16px rgb(18 50 108 / 2%);
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] [data-name="navigation-item-1st-level"] {
+  color: #3c455d;
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] [data-name="navigation-item-1st-level"] [class~="text-[#bdc2d1]"] {
+  color: #3c455d !important;
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] [data-name="navigation-item-1st-level"][class~="bg-[rgba(60,69,93,0.3)]"] {
+  background: #eef3ff !important;
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] [data-name="navigation-item-1st-level"][class~="bg-[rgba(60,69,93,0.3)]"] [class~="text-white"] {
+  color: #0036fe !important;
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] [data-name="navigation-item-1st-level"] img {
+  filter: brightness(0.44);
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] [data-name="navigation-item-1st-level"][class~="bg-[rgba(60,69,93,0.3)]"] img {
+  filter: brightness(0) saturate(100%) invert(21%) sepia(100%) saturate(6635%) hue-rotate(234deg) brightness(91%);
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] [data-name="navigation-item-1st-level"][class~="bg-[#eef3ff]"] img {
+  filter: brightness(0) saturate(100%) invert(21%) sepia(100%) saturate(6635%) hue-rotate(234deg) brightness(91%);
+}
+
+.app-viewport[data-theme="light"] [data-name="Menu"] a:hover,
+.app-viewport[data-theme="light"] [data-name="Menu"] .sidebar-nav-link:hover {
+  background: #f4f5fb;
+}
+
+.app-viewport [data-name="tabs水平插槽"] button {
+  border: 0;
+}
+
+.app-viewport [data-name="tabs-capsule-cell"],
+.app-viewport [data-name="tabs-capsule-cell"] > div,
+.app-viewport [data-name="tabs-line-cell"],
+.app-viewport [data-name="tabs-line-cell"] > div {
+  transition:
+    background-color 140ms ease,
+    color 140ms ease;
+}
+
+.app-viewport [data-name="tabs-capsule-cell"],
+.app-viewport [data-name="tabs-capsule-cell"] *,
+.app-viewport [data-name="tabs-line-cell"],
+.app-viewport [data-name="tabs-line-cell"] * {
+  font-weight: 500 !important;
+}
+
+.app-viewport [data-name="tag"],
+.app-viewport [data-name="tag"] * {
+  font-weight: 500 !important;
+}
+
+.app-viewport [data-name="tabs-capsule-cell"]:not([data-theme-option]):hover > div,
+.app-viewport [data-name="tabs-line-cell"]:hover > div {
+  color: #1e2436 !important;
+}
+
+.app-viewport [data-theme-option]:not([aria-pressed="true"]):hover {
+  background: rgb(255 255 255 / 12%) !important;
+}
+
+.app-viewport[data-theme="light"] [data-name="tabs水平插槽"] {
+  background: #f4f5fb !important;
+}
+
+.app-viewport[data-theme="light"] [data-name="首页"] [data-name="tabs-line"] [data-name="tabs水平插槽"] {
+  background: transparent !important;
+}
+
+.app-viewport[data-theme="light"] [data-name="列表页"] [data-name="tabs水平插槽"],
+.app-viewport[data-theme="light"] [data-name="详情页"] [data-name="tabs水平插槽"] {
+  background: #eaebf1 !important;
+}
+
+.app-viewport[data-theme="light"] [data-theme-option] {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.app-viewport[data-theme="light"] [data-theme-option] > div {
+  color: #646e87 !important;
+}
+
+.app-viewport[data-theme="light"] [data-theme-option="light"] {
+  background: #fff !important;
+  box-shadow:
+    0 2px 4px rgb(18 50 108 / 1%),
+    0 8px 16px rgb(18 50 108 / 2%) !important;
+}
+
+.app-viewport[data-theme="light"] [data-theme-option="light"] > div {
+  color: #1e2436 !important;
+}
+
+.app-viewport > [data-name="首页"],
+.app-viewport > [data-name="列表页"],
+.app-viewport > [data-name="详情页"],
+.app-viewport > [data-name="表单页-填写类-方案2"] {
+  width: 100%;
+  height: 100%;
+}
+
+.app-viewport a,
+.sidebar-nav-link {
+  transition:
+    background-color 140ms ease,
+    color 140ms ease;
+}
+
+.app-viewport a:hover,
+.sidebar-nav-link:hover {
+  background: rgb(60 69 93 / 20%);
+}
+
+[data-name="列表页"] [data-name="button"],
+[data-name="列表页"] [data-name="filter-simple"],
+[data-name="列表页"] [data-name="input"] {
+  cursor: pointer;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+[data-name="列表页"] [data-name="button"]:hover,
+[data-name="列表页"] [data-name="filter-simple"]:hover {
+  border-color: #cdd2dd;
+  background-color: #f8f8fb;
+}
+
+[data-name="列表页"] [data-name="button"]:active,
+[data-name="列表页"] [data-name="filter-simple"]:active {
+  background-color: #f0f1f7;
+}
+
+[data-name="列表页"] [data-name="input"]:focus-within {
+  border-color: #4d72fe;
+  box-shadow: 0 0 0 2px rgb(0 54 254 / 10%);
+}
+
+.app-viewport input[type="search"]::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+.design-icon-native {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+
+/* The generated table rows share this component node id. */
+[data-name="列表页"] [data-node-id="1:16215"] {
+  cursor: pointer;
+  transition: background-color 140ms ease;
+}
+
+[data-name="列表页"] [data-node-id="1:16215"]:hover {
+  z-index: 1;
+  background-color: #f8f8fb;
+  border-radius: 6px;
+}
+
+.row-hover-actions {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  width: 168px;
+  height: 56px;
+  min-height: 48px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  padding: 8px 12px;
+  border-color: #f7f9fc;
+  background: #f8f8fb;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 140ms ease;
+}
+
+[data-name="列表页"] [data-node-id="1:16215"]:hover .row-hover-actions {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.row-hover-follow,
+.row-hover-icon-button {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f3f3f7;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow:
+    0 1px 1px rgb(20 41 79 / 2%),
+    0 2px 4px rgb(20 41 79 / 1%);
+}
+
+.row-hover-follow {
+  min-width: 48px;
+  gap: 4px;
+  padding: 4px 8px;
+}
+
+.row-hover-icon-button {
+  width: 28px;
+  padding: 6px;
+}
+
+.row-hover-follow:hover,
+.row-hover-icon-button:hover {
+  border-color: #e3e6ed;
+  background: #fff;
+}
+
+.operation-more-static {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 3.3333px;
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+
+.operation-more-default,
+.operation-more-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 3.3333px;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 140ms ease;
+}
+
+.operation-more-hover {
+  opacity: 0;
+}
+
+[data-name="列表页"]
+  [data-node-id="1:16215"]:hover
+  .operation-more-default {
+  opacity: 0;
+}
+
+[data-name="列表页"]
+  [data-node-id="1:16215"]:hover
+  .operation-more-hover {
+  opacity: 1;
+}
+
+[data-name="列表页"] [data-name="row"] {
+  z-index: 10;
+}
+
+.simple-table-body-scroll {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  overscroll-behavior-inline: contain;
+  padding-top: 0 !important;
+  touch-action: pan-x pan-y;
+}
+
+[data-name="列表页"] [data-name="table"] > [data-name="水平布局插槽"] {
+  min-width: 1138px;
+}
+
+[data-name="列表页"]
+  [data-name="table"]
+  [data-node-id="1:16215"]
+  > [data-name="行"] {
+  width: 100%;
+  min-width: 1138px;
+}
+
+[data-name="列表页"] [data-node-id="1:22864"] > [data-name="row"] {
+  width: 100%;
+  min-width: 1138px;
+}
+
+/* Keep header and body on the same responsive column sizing model. */
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(1),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(1) {
+  flex: 1 1 0;
+  min-width: 240px;
+}
+
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(2),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(2) {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 90px;
+}
+
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(3),
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(4),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(3),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(4) {
+  flex: 1 1 0;
+  min-width: 90px;
+}
+
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(5),
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(6),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(5),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(6) {
+  flex: 1 1 0;
+  min-width: 120px;
+}
+
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(7),
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(8),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(7),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(8) {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 168px;
+}
+
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(9),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(9) {
+  flex: 0 0 52px;
+}
+
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(-n + 8),
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(-n + 8) {
+  overflow: hidden;
+}
+
+[data-name="列表页"] [data-name="table-cell-header"]:nth-child(-n + 8) p,
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(-n + 8) p {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(-n + 8) [data-name="tag"] {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.simple-table-shell {
+  min-width: 0;
+  max-width: 100%;
+  container-type: inline-size;
+}
+
+.simple-table-header-scroll {
+  position: sticky;
+  top: -20px;
+  z-index: 15;
+  order: -1;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  background: #f8f8fb;
+  scrollbar-width: none;
+  touch-action: pan-x;
+}
+
+.simple-table-header-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@container (max-width: 1279px) {
+  [data-name="列表页"]
+    [data-name="table"]
+    [data-node-id="1:16215"]
+    > [data-name="行"]
+    > [data-name="table-cell-body"]:last-of-type {
+    position: sticky;
+    right: 0;
+    z-index: 5;
+    width: 52px;
+    min-width: 52px;
+    background: #fff;
+    box-shadow: none;
+  }
+
+  [data-name="列表页"]
+    [data-name="table"]
+    [data-node-id="1:16215"]:hover
+    > [data-name="行"]
+    > [data-name="table-cell-body"]:last-of-type {
+    background: #f8f8fb;
+  }
+
+  [data-name="列表页"]
+    [data-node-id="1:22864"]
+    [data-name="row"]
+    > [data-name="table-cell-header"]:last-of-type {
+    position: sticky;
+    right: 0;
+    z-index: 6;
+    background: #f8f8fb;
+    box-shadow: none;
+  }
+
+  .row-hover-actions {
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    height: auto;
+    align-self: stretch;
+    margin-left: -168px;
+    transform: none;
+  }
+}
+
+[data-name="列表页"] [data-node-id="1:22864"] > [data-name="row"] {
+  position: relative !important;
+  top: auto !important;
+}
+
+[data-name="列表页"] [data-name="table-cell-body"] p {
+  max-width: 100%;
+}
+
+.add-customer-button {
+  transition: background-color 140ms ease;
+}
+
+.add-customer-button:hover {
+  background: #002bd1 !important;
+}
+
+[data-name="列表页"] [data-name="_paginator-iconbutton"],
+[data-name="列表页"] [data-name="_paginator-cell-text"] {
+  cursor: pointer;
+  transition: background-color 140ms ease;
+}
+
+[data-name="列表页"] [data-name="_paginator-iconbutton"]:hover,
+[data-name="列表页"] [data-name="_paginator-cell-text"]:hover {
+  background: #f3f3f7;
+}
+
+[data-name="列表页"] [data-name="行"] > [data-name="table-cell-body"]:nth-child(5) * {
+  font-weight: 400 !important;
+}
+
+[data-name="详情页"] [data-name="面包屑"],
+[data-name="详情页"] [data-name="面包屑"] * {
+  font-size: 14px !important;
+}
+
+[data-name="详情页"] [data-name="面包屑"] a:hover {
+  background: transparent !important;
+  color: #0036fe !important;
+}
+
+[data-name="详情页"] [data-name="Label"],
+[data-name="详情页"] [data-name="Label"] * {
+  font-weight: 400 !important;
+}
+
+[data-name="表单页-填写类-方案2"] [data-name="退出创建"] {
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  transition:
+    background-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+[data-name="表单页-填写类-方案2"] [data-name="退出创建"]:hover {
+  background: #eaebf1;
+}
+
+[data-name="表单页-填写类-方案2"] [data-name="退出创建"]:focus-visible {
+  outline: 2px solid #4080ff;
+  outline-offset: 2px;
+}
+
+[data-name="首页"] [data-node-id="1:24401"] > div {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+[data-name="首页"] [data-node-id="1:24401"] [data-node-id="1:17888"] {
+  min-width: 740px;
+}
+
+[data-name="首页"] [class*="text-ellipsis"],
+[data-name="首页"] [class*="text-ellipsis"] > p {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+[data-name="列表页"] [class*="Inter:Regular"] {
+  white-space: nowrap;
+}
+
+[data-name="知识中心"] [data-name="内容"] > div {
+  flex-wrap: wrap;
+}
+
+[data-name="知识中心"] [data-name="内容"] > div > div {
+  flex-basis: 280px;
+}
+
+.knowledge-item-title {
+  width: 100%;
+  min-width: 0;
+  outline: none;
+}
+
+.knowledge-item-title-text {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.knowledge-item-title::before {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  z-index: 30;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #14191f;
+  box-shadow:
+    0 2px 4px -2px rgb(0 0 0 / 5%),
+    0 6px 16px rgb(0 0 0 / 10%);
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(2px);
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease;
+  white-space: normal;
+}
+
+.knowledge-item-title::after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 31;
+  width: 10px;
+  height: 4px;
+  background: url("/assets/daaba.svg") center / 10px 4px no-repeat;
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(2px);
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease;
+}
+
+.knowledge-item-title:hover::before,
+.knowledge-item-title:hover::after,
+.knowledge-item-title:focus-visible::before,
+.knowledge-item-title:focus-visible::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+[data-name="列表页"] [data-name="Paginator"] {
+  z-index: 20;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.list-table-card {
+  isolation: isolate;
+}
+
+.list-card-paginator {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+}
+
+[data-name="详情页"] [data-name="Paginator"] {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+}
+
+.traditional-table-design [class*="Inter:Medium"] {
+  font-family: "Inter:Medium", system-ui, sans-serif !important;
+}
+
+.traditional-table-design [class*="Inter:Regular"] {
+  font-family: "Inter:Regular", system-ui, sans-serif !important;
+}
+
+.traditional-table-design [class*="Inter:Semi_Bold"] {
+  font-family: "Inter:Semi Bold", system-ui, sans-serif !important;
+}
+
+.traditional-table-design [class*="PingFang_SC:Medium"] {
+  font-family: "PingFang SC:Medium", system-ui, sans-serif !important;
+}
+
+.traditional-table-design [class*="PingFang_SC:Regular"],
+.traditional-table-design [class*="Source_Han_Sans_CN"] {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+@media (max-width: 1100px) {
+  [data-name="首页"] [data-node-id="1:23165"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  [data-name="首页"] [data-node-id="1:23340"] {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  [data-name="首页"] [data-node-id="1:23340"] > [data-name="绩效卡片"] {
+    flex-basis: 280px;
+  }
+}
+
+@media (max-width: 820px) {
+  [data-name="首页"] > div > [data-name="Menu"],
+  [data-name="列表页"] > div > [data-name="Menu"] {
+    display: none;
+  }
+
+  [data-name="首页"] [data-name="PageHeader"],
+  [data-name="列表页"] [data-name="PageHeader"] {
+    padding-inline: 16px;
+  }
+
+  [data-name="首页"] [data-node-id="1:23045"],
+  [data-name="列表页"] [data-node-id="1:21934"] {
+    padding: 16px;
+  }
+
+  [data-name="首页"] [data-node-id="1:23048"] {
+    font-size: 20px;
+  }
+
+}

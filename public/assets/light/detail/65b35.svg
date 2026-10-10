@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Flag/CN">
+<mask id="mask0_0_9338" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+<path id="Rectangle 2" d="M0 5.25C0 4.00736 1.00736 3 2.25 3H21.75C22.9926 3 24 4.00736 24 5.25V18.75C24 19.9926 22.9926 21 21.75 21H2.25C1.00736 21 0 19.9926 0 18.75V5.25Z" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_0_9338)">
+<g id="Wrap">
+<path id="Element" d="M1.14441e-05 3H27.0612V21H1.14441e-05V3Z" fill="#EE1C25"/>
+<g id="Element_2">
+<path id="Element_3" d="M2.48462 11.1173L4.19114 5.99769L5.89767 11.1173L1.34694 7.98866H7.03535L2.48462 11.1173Z" fill="#FFFF00"/>
+<path id="Element_4" d="M9.88645 6.09589L8.13022 6.48508L9.30169 5.11998L9.18679 6.95723L8.2122 5.33071L9.88645 6.09589Z" fill="#FFFF00"/>
+<path id="Element_5" d="M11.6588 8.34171L9.88912 8.0193L11.4983 7.2154L10.6799 8.86428L10.4124 6.98708L11.6588 8.34171Z" fill="#FFFF00"/>
+<path id="Element_6" d="M11.4003 11.4934L9.91595 10.4773L11.7131 10.3996L10.2933 11.5713L10.8147 9.74821L11.4003 11.4934Z" fill="#FFFF00"/>
+<path id="Element_7" d="M9.16819 13.5525L8.1915 12.0419L9.87921 12.6643L8.11707 13.1967L9.3021 11.7165L9.16819 13.5525Z" fill="#FFFF00"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

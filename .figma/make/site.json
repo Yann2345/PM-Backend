@@ -1,0 +1,11 @@
+{
+  "title": "B端方向探索方案A",
+  "description": "This web application offers a seamless user experience with a fully interactive sidebar and fixed headers, enhancing navigation for efficient data browsing.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
