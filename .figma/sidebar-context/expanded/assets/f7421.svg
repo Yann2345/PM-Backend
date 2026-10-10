@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="21.3333" height="9.84434" viewBox="0 0 21.3333 9.84434" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Rectangle 7" filter="url(#filter0_i_0_16172)">
+<path d="M0 0H21.3333V8.50929C21.3333 9.50046 20.2903 10.1451 19.4037 9.70186L10.6667 5.33333L1.92962 9.70186C1.04308 10.1451 0 9.50046 0 8.50929V0Z" fill="#FF8E31"/>
+</g>
+<defs>
+<filter id="filter0_i_0_16172" x="0" y="0" width="21.3333" height="11.1777" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="0.666667"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.808685 0 0 0 0 0.269562 0 0 0 0 0 0 0 0 0.73 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_16172"/>
+</filter>
+</defs>
+</svg>

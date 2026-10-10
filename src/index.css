@@ -100,49 +100,50 @@
 
 @font-face {
   font-family: "PingFang SC:Medium";
-  src: url("/fonts/PingFang_SC-Medium.woff2") format("woff2");
+  src: url("../fonts/PingFang_SC-Medium.woff2") format("woff2");
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins:Medium";
-  src: url("/fonts/Poppins-Medium.woff2") format("woff2");
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Poppins:Regular";
-  src: url("/fonts/Poppins-Regular.woff2") format("woff2");
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Poppins:SemiBold";
-  src: url("/fonts/Poppins-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Source Han Sans CN:Bold";
-  src: url("/fonts/Source_Han_Sans_CN-Bold.woff2") format("woff2");
+  src: url("../fonts/Source_Han_Sans_CN-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Source Han Sans CN:Medium";
-  src: url("/fonts/Source_Han_Sans_CN-Medium.woff2") format("woff2");
+  src: url("../fonts/Source_Han_Sans_CN-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Source Han Sans CN:Regular";
-  src: url("/fonts/Source_Han_Sans_CN-Regular.woff2") format("woff2");
+  src: url("../fonts/Source_Han_Sans_CN-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
@@ -152,6 +153,18 @@
   color: #1e2436;
   background: #15171e;
   font-synthesis: none;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body * {
+  font-family: inherit !important;
 }
 
 * {
@@ -193,12 +206,184 @@ a {
 .app-viewport {
   --content-center-offset: 108px;
 
+  position: relative;
   width: 100%;
   height: 100dvh;
   min-width: 0;
   overflow: hidden;
   background: #15171e;
   transition: background-color 160ms ease;
+}
+
+.app-route {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.app-route[hidden] {
+  display: none;
+}
+
+.performance-rank {
+  opacity: 0;
+  transform: scale(0.88);
+  animation: performance-rank-enter 420ms cubic-bezier(0.2, 0.8, 0.2, 1.15) 180ms forwards;
+}
+
+.performance-card {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: performance-card-enter 520ms cubic-bezier(0.2, 0.8, 0.2, 1) 120ms forwards;
+}
+
+.performance-card:nth-child(2) {
+  animation-delay: 220ms;
+}
+
+.performance-chart {
+  overflow: hidden;
+}
+
+.performance-chart-image {
+  clip-path: inset(0 100% 0 0);
+  animation: performance-chart-reveal 900ms cubic-bezier(0.25, 1, 0.5, 1) 360ms forwards;
+  will-change: clip-path;
+}
+
+.performance-card:nth-child(2) .performance-chart-image {
+  animation-delay: 500ms;
+}
+
+.performance-progress-fill {
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: performance-progress-grow 760ms cubic-bezier(0.25, 1, 0.5, 1) 420ms forwards;
+}
+
+.task-item-with-divider::after {
+  position: absolute;
+  right: 8px;
+  bottom: 0;
+  left: 52px;
+  height: 1px;
+  background: #f6f6f9;
+  content: "";
+}
+
+.home-list-module p {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-list-module [data-name="任务"],
+.home-list-module [data-name="event"],
+.home-list-module [data-name="标题"],
+.home-list-module [data-name="辅助内容区"],
+.home-list-module [data-name="文字"] {
+  min-width: 0;
+}
+
+.home-module-titlebar [data-name="link"] {
+  cursor: pointer;
+}
+
+.home-module-titlebar [data-name="link"] p {
+  color: #646e87;
+  font-weight: 500;
+}
+
+.home-module-titlebar [data-name="link"] [data-name="common-linear-arrow-right"] {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition:
+    width 160ms ease,
+    opacity 120ms ease,
+    transform 160ms ease;
+}
+
+.home-module-titlebar:hover [data-name="link"] [data-name="common-linear-arrow-right"] {
+  width: 12px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.customer-performance-module [data-name="row"]:has([data-name="table-cell-body"]) {
+  overflow: hidden;
+  border-radius: 6px;
+  transition: background-color 150ms ease;
+}
+
+.customer-performance-module [data-name="row"]:has([data-name="table-cell-body"]):hover {
+  background: #f8f8fb;
+}
+
+.common-function-item {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.common-function-item [data-name="图标"] {
+  transition: background-color 150ms ease;
+}
+
+.common-function-item:hover [data-name="图标"],
+.common-function-item:focus-visible [data-name="图标"] {
+  background: #f0f1f7;
+}
+
+.common-function-item:focus-visible {
+  outline: 2px solid #646e87;
+  outline-offset: 2px;
+}
+
+.performance-card:nth-child(2) .performance-progress-fill {
+  animation-delay: 560ms;
+}
+
+@keyframes performance-rank-enter {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes performance-card-enter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes performance-chart-reveal {
+  to {
+    clip-path: inset(0);
+  }
+}
+
+@keyframes performance-progress-grow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .performance-rank,
+  .performance-card,
+  .performance-chart-image,
+  .performance-progress-fill {
+    opacity: 1;
+    clip-path: none;
+    transform: none;
+    animation: none;
+  }
 }
 
 .app-viewport[data-theme="light"] {
@@ -215,6 +400,10 @@ a {
 
 .app-viewport [data-name="Menu"] {
   transition: width 180ms ease;
+}
+
+.app-viewport [data-name="Menu"] p {
+  font-weight: 500 !important;
 }
 
 .app-viewport [data-name="Menu"] > [data-name="logo"] [data-name="common-linear-menu"] {
@@ -269,7 +458,6 @@ a {
   background: #1e2436;
   color: #fff;
   content: attr(data-tooltip);
-  font-family: "PingFang SC:Regular", sans-serif;
   font-size: 12px;
   line-height: 18px;
   opacity: 0;
@@ -438,6 +626,8 @@ a {
 }
 
 .light-detail-screen [data-name="anchor-item-1st-level"] {
+  height: 20px !important;
+  padding: 2px 0 2px 12px !important;
   cursor: pointer;
 }
 
@@ -446,8 +636,20 @@ a {
   font-weight: 400 !important;
 }
 
+.light-detail-screen [data-name="anchor-item-1st-level"] p {
+  line-height: 18px !important;
+}
+
 .light-detail-screen [data-name="anchor-item-1st-level"] > .absolute {
   display: none;
+}
+
+.light-detail-screen [data-name="锚点导航"] {
+  border-color: #e3e6ed !important;
+}
+
+.light-detail-screen [data-name="锚点导航"] > [data-name="垂直布局"] {
+  gap: 4px !important;
 }
 
 .light-detail-screen[data-active-section="basic"] [data-name="anchor-item-1st-level"]:nth-child(1),
@@ -476,12 +678,42 @@ a {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 1px;
-  height: 24px;
-  border-radius: 2px;
+  width: 2px;
+  height: 20px;
+  border-radius: 0 2px 2px 0;
   background: #1e2436;
   content: "";
   transform: translateY(-50%);
+}
+
+.light-detail-screen
+  [data-name="内容区域"]
+  .flex-wrap:not([data-name="重要信息"]):has(> [data-name="descriptions-item"]) {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 20px !important;
+}
+
+.light-detail-screen
+  [data-name="内容区域"]
+  .flex-wrap:not([data-name="重要信息"])
+  > [data-name="descriptions-item"] {
+  width: 100%;
+  min-width: 0 !important;
+}
+
+.light-detail-screen
+  [data-node-id="1012:47179"]
+  .flex-wrap:has(> [data-name="descriptions-item"]) {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+@media (max-width: 900px) {
+  .light-detail-screen
+    [data-name="内容区域"]
+    .flex-wrap:not([data-name="重要信息"]):has(> [data-name="descriptions-item"]) {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .light-detail-screen [data-name="内容区域"] {
@@ -918,6 +1150,30 @@ a {
   overflow: hidden;
 }
 
+[data-name="列表页"]
+  [data-name="行"]
+  > [data-name="table-cell-body"]:first-child
+  [data-name="内容插槽"]
+  > [data-name="Content"],
+[data-name="列表页"]
+  [data-name="行"]
+  > [data-name="table-cell-body"]:first-child
+  [data-name="内容插槽"]
+  > [data-name="Content"]
+  *,
+[data-name="列表页"]
+  [data-name="行"]
+  > [data-name="table-cell-body"]:nth-child(2)
+  [data-name="tag"]
+  p,
+[data-name="列表页"]
+  [data-name="行"]
+  > [data-name="table-cell-body"]:nth-child(6)
+  [data-name="tag"]
+  p {
+  font-weight: 500 !important;
+}
+
 .simple-table-shell {
   min-width: 0;
   max-width: 100%;
@@ -937,6 +1193,7 @@ a {
   overflow-y: hidden;
   overscroll-behavior-inline: contain;
   background: #f8f8fb;
+  border-radius: 6px;
   scrollbar-width: none;
   touch-action: pan-x;
 }
@@ -1076,6 +1333,48 @@ a {
   white-space: nowrap;
 }
 
+[data-name="首页"] [data-name="任务"] [data-name="标题"],
+[data-name="首页"] [data-name="任务"] [data-name="辅助内容区"],
+[data-name="首页"] [data-name="任务"] [data-name="文字"],
+[data-name="首页"] [data-name="任务"] [data-name="文字"] > div {
+  min-width: 0 !important;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+[data-name="首页"] [data-name="任务"] [data-name="文字"] > div {
+  flex: 1 1 0 !important;
+}
+
+[data-name="首页"] [data-name="任务"] [data-name="标题"] p,
+[data-name="首页"] [data-name="任务"] [data-name="辅助内容区"] p {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-supporting-text {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  flex: 1 1 0 !important;
+  overflow: hidden !important;
+}
+
+.task-supporting-text-value {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
 [data-name="列表页"] [class*="Inter:Regular"] {
   white-space: nowrap;
 }
@@ -1136,7 +1435,7 @@ a {
   z-index: 31;
   width: 10px;
   height: 4px;
-  background: url("/assets/daaba.svg") center / 10px 4px no-repeat;
+  background: url("../assets/daaba.svg") center / 10px 4px no-repeat;
   content: "";
   opacity: 0;
   pointer-events: none;
@@ -1174,27 +1473,6 @@ a {
   position: sticky;
   bottom: 0;
   z-index: 20;
-}
-
-.traditional-table-design [class*="Inter:Medium"] {
-  font-family: "Inter:Medium", system-ui, sans-serif !important;
-}
-
-.traditional-table-design [class*="Inter:Regular"] {
-  font-family: "Inter:Regular", system-ui, sans-serif !important;
-}
-
-.traditional-table-design [class*="Inter:Semi_Bold"] {
-  font-family: "Inter:Semi Bold", system-ui, sans-serif !important;
-}
-
-.traditional-table-design [class*="PingFang_SC:Medium"] {
-  font-family: "PingFang SC:Medium", system-ui, sans-serif !important;
-}
-
-.traditional-table-design [class*="PingFang_SC:Regular"],
-.traditional-table-design [class*="Source_Han_Sans_CN"] {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
 @media (max-width: 1100px) {

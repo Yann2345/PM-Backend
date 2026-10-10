@@ -1049,7 +1049,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
             </div>
             <div className="gap-x-[12px] gap-y-[12px] grid grid-cols-[__minmax(0,0.67fr)_minmax(0,0.33fr)] grid-rows-[repeat(1,fit-content(100%))] pb-[20px] relative shrink-0 w-full" data-node-id="1:23165">
               <div className="content-stretch flex flex-col gap-[12px] items-start justify-self-stretch relative self-start shrink-0" data-node-id="1:23166">
-                <div className="bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_0.5px_rgba(20,41,79,0.02),0px_2px_2px_rgba(20,41,79,0.01)] flex flex-col gap-[16px] items-start p-[21px] relative rounded-[8px] shrink-0 w-full" data-node-id="1:23167" data-name="目标绩效">
+                <div className="performance-overview bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_0.5px_rgba(20,41,79,0.02),0px_2px_2px_rgba(20,41,79,0.01)] flex flex-col gap-[16px] items-start p-[21px] relative rounded-[8px] shrink-0 w-full" data-node-id="1:23167" data-name="目标绩效">
                   <div className="relative shrink-0 w-full" data-node-id="1:23168" data-name="标题">
                     <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[16px] items-start relative size-full">
                       <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative" data-node-id="1:23169" data-name="标题">
@@ -1059,7 +1059,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                           </div>
                         </div>
                         <div className="content-center flex flex-wrap gap-[2px_8px] items-center relative shrink-0" data-node-id="1:23178" data-name="描述">
-                          <div className="bg-[#fef5e0] border border-[#feeabb] border-solid content-stretch flex gap-[2px] items-center px-[6px] py-px relative rounded-[9999px] shrink-0" data-node-id="1:23191">
+                          <div className="performance-rank bg-[#fef5e0] border border-[#feeabb] border-solid content-stretch flex gap-[2px] items-center px-[6px] py-px relative rounded-[9999px] shrink-0" data-node-id="1:23191">
                             <div className="overflow-clip relative shrink-0 size-[14px]" data-node-id="1:23192" data-name="排名">
                               <div className="absolute bottom-0 contents left-0 top-0" data-node-id="I1:23192;636:16010">
                                 <div className="absolute inset-[66.67%_16.67%_0_16.67%]" data-node-id="I1:23192;636:16011">
@@ -1115,7 +1115,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                   <div className="relative shrink-0 w-full" data-node-id="1:23339">
                     <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
                       <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-node-id="1:23340">
-                        <div className="bg-white border border-[#eaebf1] border-solid content-stretch flex flex-[1_0_0] gap-[8px] items-end min-w-[152px] p-[16px] relative rounded-[8px]" data-node-id="1:23441" data-name="绩效卡片">
+                        <div className="performance-card bg-white border border-[#eaebf1] border-solid content-stretch flex flex-[1_0_0] gap-[8px] items-end min-w-[152px] p-[16px] relative rounded-[8px]" data-node-id="1:23441" data-name="绩效卡片">
                           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-w-px relative" data-node-id="1:23442">
                             <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="1:23443" data-name="标题">
                               <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] not-italic relative shrink-0 text-[#3c455d] text-[14px] whitespace-nowrap" data-node-id="1:23444">
@@ -1160,17 +1160,17 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                                 </div>
                               </div>
                               <div className="bg-[#f3f3f7] content-stretch flex flex-col h-[6px] items-start pl-px pr-[140px] relative rounded-[11px] shrink-0 w-[170px]" data-node-id="1:23485">
-                                <div className="bg-[#0036fe] h-[6px] relative rounded-[11px] shrink-0 w-[127px]" data-node-id="1:23486" />
+                                <div className="performance-progress-fill bg-[#0036fe] h-[6px] relative rounded-[11px] shrink-0 w-[127px]" data-node-id="1:23486" />
                               </div>
                             </div>
                           </div>
-                          <div className="h-[90px] relative shrink-0 w-[118.96px]" data-node-id="1:23521" data-name="Refund">
+                          <div className="performance-chart h-[90px] relative shrink-0 w-[118.96px]" data-node-id="1:23521" data-name="Refund">
                             <div className="absolute inset-[-0.56%_-0.42%_0_-0.42%]">
-                              <img alt="" className="block max-w-none size-full" src={imgRefund} />
+                              <img alt="" className="performance-chart-image block max-w-none size-full" src={imgRefund} />
                             </div>
                           </div>
                         </div>
-                        <div className="bg-white border border-[#eaebf1] border-solid content-stretch flex flex-[1_0_0] gap-[8px] items-end min-w-[152px] p-[16px] relative rounded-[8px]" data-node-id="1:23524" data-name="绩效卡片">
+                        <div className="performance-card bg-white border border-[#eaebf1] border-solid content-stretch flex flex-[1_0_0] gap-[8px] items-end min-w-[152px] p-[16px] relative rounded-[8px]" data-node-id="1:23524" data-name="绩效卡片">
                           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-w-px relative" data-node-id="1:23525">
                             <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="1:23526" data-name="标题">
                               <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] not-italic relative shrink-0 text-[#3c455d] text-[14px] whitespace-nowrap" data-node-id="1:23527">
@@ -1215,13 +1215,13 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                                 </div>
                               </div>
                               <div className="bg-[#f3f3f7] content-stretch flex flex-col h-[6px] items-start pl-px pr-[140px] relative rounded-[11px] shrink-0 w-[170px]" data-node-id="1:23568">
-                                <div className="bg-[#e5485d] h-[6px] relative rounded-[11px] shrink-0 w-[43px]" data-node-id="1:23569" />
+                                <div className="performance-progress-fill bg-[#e5485d] h-[6px] relative rounded-[11px] shrink-0 w-[43px]" data-node-id="1:23569" />
                               </div>
                             </div>
                           </div>
-                          <div className="h-[90px] relative shrink-0 w-[118.96px]" data-node-id="1:23604" data-name="Refund">
+                          <div className="performance-chart h-[90px] relative shrink-0 w-[118.96px]" data-node-id="1:23604" data-name="Refund">
                             <div className="absolute inset-[-0.56%_-0.42%_0_-0.42%]">
-                              <img alt="" className="block max-w-none size-full" src={imgRefund} />
+                              <img alt="" className="performance-chart-image block max-w-none size-full" src={imgRefund} />
                             </div>
                           </div>
                         </div>
@@ -1230,7 +1230,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                   </div>
                 </div>
                 <div className="bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_0.5px_rgba(20,41,79,0.02),0px_2px_2px_rgba(20,41,79,0.01)] flex flex-col gap-[16px] items-start p-[20px] relative rounded-[8px] shrink-0 w-full" data-node-id="1:24140">
-                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0 w-full" data-node-id="1:24141">
+                  <div className="home-module-titlebar content-stretch flex gap-[16px] items-center relative shrink-0 w-full" data-node-id="1:24141">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Bold'] font-semibold justify-center leading-[0] min-w-px not-italic relative text-[#1e2436] text-[18px]" data-node-id="1:24142">
                       <p className="leading-[24px]">客户数据</p>
                     </div>
@@ -1413,9 +1413,9 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                     </div>
                   </div>
                 </div>
-                <div className="bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_0.5px_rgba(20,41,79,0.02),0px_2px_2px_rgba(20,41,79,0.01)] flex flex-col gap-[16px] items-start p-[21px] relative rounded-[8px] shrink-0 w-full" data-node-id="1:24257" data-name="客户表现">
+                <div className="customer-performance-module bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_0.5px_rgba(20,41,79,0.02),0px_2px_2px_rgba(20,41,79,0.01)] flex flex-col gap-[16px] items-start p-[21px] relative rounded-[8px] shrink-0 w-full" data-node-id="1:24257" data-name="客户表现">
                   <div className="relative shrink-0 w-full" data-node-id="1:24258">
-                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                    <div className="home-module-titlebar bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
                       <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" data-node-id="1:24259">
                         <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Bold'] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e2436] text-[18px] whitespace-nowrap" data-node-id="1:24260">
                           <p className="leading-[24px]">客户表现</p>
@@ -1712,7 +1712,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                 </div>
                 <div className="bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col gap-[16px] items-start p-[21px] relative rounded-[8px] shrink-0 w-full" data-node-id="1:24605" data-name="知识中心">
                   <div className="relative shrink-0 w-full" data-node-id="1:24606" data-name="标题">
-                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[16px] items-center relative size-full">
+                    <div className="home-module-titlebar bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[16px] items-center relative size-full">
                       <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative" data-node-id="1:24607">
                         <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Bold'] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e2436] text-[18px] whitespace-nowrap" data-node-id="1:24608">
                           <p className="leading-[24px]">知识中心</p>
@@ -1857,9 +1857,9 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                 </div>
               </div>
               <div className="content-stretch flex flex-col gap-[12px] items-start justify-center justify-self-stretch relative self-start shrink-0" data-node-id="1:24656">
-                <div className="bg-white border border-[#edeef3] border-solid content-stretch flex flex-col gap-[4px] items-start overflow-clip pb-[9px] pt-[21px] px-[21px] relative rounded-[8px] shadow-[0px_1px_1px_0px_rgba(20,41,79,0.02),0px_2px_4px_0px_rgba(20,41,79,0.01)] shrink-0 w-full" data-node-id="1:24677" data-name="新客拓展">
-                  <div className="relative shrink-0 w-full" data-node-id="1:24678" data-name="标题">
-                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[16px] items-center pb-[12px] relative size-full">
+                <div className="home-list-module bg-white border border-[#edeef3] border-solid content-stretch flex flex-col gap-[4px] items-start overflow-clip pb-[8px] pt-[20px] px-[12px] relative rounded-[8px] shadow-[0px_1px_1px_0px_rgba(20,41,79,0.02),0px_2px_4px_0px_rgba(20,41,79,0.01)] shrink-0 w-full" data-node-id="1:24677" data-name="新客拓展">
+                  <div className="px-[8px] relative shrink-0 w-full" data-node-id="1:24678" data-name="标题">
+                    <div className="home-module-titlebar bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[16px] items-center pb-[12px] relative size-full">
                       <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-node-id="1:24679" data-name="标题">
                         <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="1:24680" data-name="标题">
                           <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Bold'] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e2436] text-[18px] whitespace-nowrap" data-node-id="1:24681">
@@ -1877,7 +1877,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                       </div>
                     </div>
                   </div>
-                  <div className="border-[#e7e8ef] border-b border-solid relative shrink-0 w-full" data-node-id="1:24696" data-name="tabs-line">
+                  <div className="border-[#e7e8ef] border-b border-solid px-[8px] relative shrink-0 w-full" data-node-id="1:24696" data-name="tabs-line">
                     <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative size-full">
                       <div className="content-stretch flex flex-[1_0_0] gap-[24px] items-center min-w-px relative" data-node-id="I1:24696;522:7080" data-name="tabs水平插槽">
                         <div className="content-stretch flex flex-col gap-[4px] items-center justify-center max-w-[160px] min-w-[32px] pb-[12px] relative shrink-0" data-node-id="I1:24696;522:7080;1:24687" data-name="tabs-line-cell">
@@ -1906,13 +1906,13 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                   </div>
                   <div className="min-w-[320px] relative shrink-0 w-full" data-node-id="1:24698" data-name="任务">
                     <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start min-w-[inherit] overflow-clip relative rounded-[inherit] size-full">
-                      <div className="content-stretch flex gap-[12px] h-[64px] items-center min-w-[320px] overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:24699" data-name="任务">
+                      <div className="task-item-with-divider content-stretch flex gap-[12px] items-center min-h-[64px] min-w-[320px] overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:24699" data-name="任务">
                         <div className="bg-[#fff1f3] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24700" data-name="图标">
                           <div className="relative shrink-0 size-[16px]" data-node-id="1:24701" data-name="sidebar-linear-profile-user">
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSidebarLinearProfileUser} />
                           </div>
                         </div>
-                        <div className="border-[#f6f6f9] border-b border-solid content-stretch flex flex-[1_0_0] flex-col gap-[2px] h-full items-start min-w-px py-[12px] relative" data-node-id="1:24702" data-name="任务">
+                        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px relative" data-node-id="1:24702" data-name="任务">
                           <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="1:24704" data-name="标题">
                             <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:24705">
                               <p className="leading-[20px] overflow-hidden text-ellipsis">客户建联，逾期回收公海</p>
@@ -1920,20 +1920,20 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                           </div>
                           <div className="content-stretch flex gap-[8px] h-[18px] items-center relative shrink-0 w-full" data-node-id="1:24706" data-name="辅助内容区">
                             <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative" data-node-id="1:24707" data-name="文字">
-                              <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#646e87] text-[12px] whitespace-nowrap" data-node-id="1:24708">
-                                <p className="leading-[18px]">未来生活集团，剩余3天完成客户建联</p>
+                              <div className="task-supporting-text [word-break:break-word] flex flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#646e87] text-[12px] whitespace-nowrap" data-node-id="1:24708">
+                                <p className="task-supporting-text-value leading-[18px]">未来生活集团，剩余3天完成客户建联</p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="content-stretch flex gap-[12px] h-[64px] items-center min-w-[320px] overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:24711" data-name="任务">
+                      <div className="task-item-with-divider content-stretch flex gap-[12px] items-center min-h-[64px] min-w-[320px] overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:24711" data-name="任务">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24712" data-name="图标">
                           <div className="relative shrink-0 size-[16px]" data-node-id="1:24713" data-name="sidebar-linear-seal">
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSidebarLinearSeal} />
                           </div>
                         </div>
-                        <div className="border-[#f6f6f9] border-b border-solid content-stretch flex flex-[1_0_0] flex-col gap-[2px] h-full items-start min-w-px py-[12px] relative" data-node-id="1:24714" data-name="任务">
+                        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px relative" data-node-id="1:24714" data-name="任务">
                           <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="1:24716" data-name="标题">
                             <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:24717">
                               <p className="leading-[20px] overflow-hidden text-ellipsis">产品合作材料驳回整改</p>
@@ -1941,20 +1941,20 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                           </div>
                           <div className="content-stretch flex gap-[8px] h-[18px] items-center relative shrink-0 w-full" data-node-id="1:24718" data-name="辅助内容区">
                             <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative" data-node-id="1:24719" data-name="文字">
-                              <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#646e87] text-[12px] whitespace-nowrap" data-node-id="1:24720">
-                                <p className="leading-[18px]">TestPOS新产品合作，补充域名所有权证明</p>
+                              <div className="task-supporting-text [word-break:break-word] flex flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#646e87] text-[12px] whitespace-nowrap" data-node-id="1:24720">
+                                <p className="task-supporting-text-value leading-[18px]">TestPOS新产品合作，补充域名所有权证明</p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="content-stretch flex gap-[12px] h-[64px] items-center min-w-[320px] overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:24723" data-name="任务">
+                      <div className="task-item-with-divider content-stretch flex gap-[12px] items-center min-h-[64px] min-w-[320px] overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:24723" data-name="任务">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24724" data-name="图标">
                           <div className="relative shrink-0 size-[16px]" data-node-id="1:24725" data-name="common-linear-box-add">
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCommonLinearBoxAdd} />
                           </div>
                         </div>
-                        <div className="border-[#f6f6f9] border-b border-solid content-stretch flex flex-[1_0_0] flex-col gap-[2px] h-full items-start min-w-px py-[12px] relative" data-node-id="1:24726" data-name="任务">
+                        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px relative" data-node-id="1:24726" data-name="任务">
                           <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="1:24728" data-name="标题">
                             <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:24729">
                               <p className="leading-[20px] overflow-hidden text-ellipsis">服务协议待确认</p>
@@ -1962,20 +1962,20 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                           </div>
                           <div className="content-stretch flex gap-[8px] h-[18px] items-center relative shrink-0 w-full" data-node-id="1:24730" data-name="辅助内容区">
                             <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative" data-node-id="1:24731" data-name="文字">
-                              <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#646e87] text-[12px] whitespace-nowrap" data-node-id="1:24732">
-                                <p className="leading-[18px]">TestPOS新产品合作，服务协议待您审核确认</p>
+                              <div className="task-supporting-text [word-break:break-word] flex flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#646e87] text-[12px] whitespace-nowrap" data-node-id="1:24732">
+                                <p className="task-supporting-text-value leading-[18px]">TestPOS新产品合作，服务协议待您审核确认</p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="content-stretch flex gap-[12px] h-[64px] items-center min-w-[320px] overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:24735" data-name="任务">
+                      <div className="task-item-with-divider content-stretch flex gap-[12px] items-center min-h-[64px] min-w-[320px] overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:24735" data-name="任务">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24736" data-name="图标">
                           <div className="relative shrink-0 size-[16px]" data-node-id="1:24737" data-name="sidebar-linear-seal">
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSidebarLinearSeal} />
                           </div>
                         </div>
-                        <div className="border-[#f6f6f9] border-b border-solid content-stretch flex flex-[1_0_0] flex-col gap-[2px] h-full items-start min-w-px py-[12px] relative" data-node-id="1:24738" data-name="任务">
+                        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px relative" data-node-id="1:24738" data-name="任务">
                           <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="1:24740" data-name="标题">
                             <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:24741">
                               <p className="leading-[20px] overflow-hidden text-ellipsis">报价单驳回待整改</p>
@@ -1983,20 +1983,20 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                           </div>
                           <div className="content-stretch flex gap-[8px] h-[18px] items-center relative shrink-0 w-full" data-node-id="1:24742" data-name="辅助内容区">
                             <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative" data-node-id="1:24743" data-name="文字">
-                              <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#646e87] text-[12px] whitespace-nowrap" data-node-id="1:24744">
-                                <p className="leading-[18px]">TestPOS已有商户增购</p>
+                              <div className="task-supporting-text [word-break:break-word] flex flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#646e87] text-[12px] whitespace-nowrap" data-node-id="1:24744">
+                                <p className="task-supporting-text-value leading-[18px]">TestPOS已有商户增购</p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="content-stretch flex gap-[12px] h-[64px] items-center min-w-[320px] overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:24747" data-name="任务">
+                      <div className="content-stretch flex gap-[12px] items-center min-h-[64px] min-w-[320px] overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:24747" data-name="任务">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24748" data-name="图标">
                           <div className="relative shrink-0 size-[16px]" data-node-id="1:24749" data-name="common-linear-box-add">
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCommonLinearBoxAdd} />
                           </div>
                         </div>
-                        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] h-full items-start min-w-px py-[12px] relative" data-node-id="1:24750" data-name="任务">
+                        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px relative" data-node-id="1:24750" data-name="任务">
                           <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="1:24752" data-name="标题">
                             <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:24753">
                               <p className="leading-[20px] overflow-hidden text-ellipsis">MCC变更待确认</p>
@@ -2004,8 +2004,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                           </div>
                           <div className="content-stretch flex gap-[8px] h-[18px] items-center relative shrink-0 w-full" data-node-id="1:24754" data-name="辅助内容区">
                             <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative" data-node-id="1:24755" data-name="文字">
-                              <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#646e87] text-[12px] text-ellipsis whitespace-nowrap" data-node-id="1:24756">
-                                <p className="leading-[18px] overflow-hidden text-ellipsis">TestPOS新产品合作，KYCB审核通过，MCC有变更待处理</p>
+                              <div className="task-supporting-text [word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Regular'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#646e87] text-[12px] text-ellipsis whitespace-nowrap" data-node-id="1:24756">
+                                <p className="task-supporting-text-value leading-[18px] overflow-hidden text-ellipsis">TestPOS新产品合作，KYCB审核通过，MCC有变更待处理</p>
                               </div>
                             </div>
                           </div>
@@ -2034,7 +2034,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                   </div>
                   <div className="relative rounded-[8px] shrink-0 w-full" data-node-id="1:24767" data-name="下拉布局">
                     <div className="bg-clip-padding border-0 border-[transparent] border-solid gap-x-[12px] gap-y-[12px] grid grid-cols-[repeat(4,minmax(0,1fr))] grid-rows-[repeat(2,fit-content(100%))] overflow-clip relative rounded-[inherit] size-full">
-                      <div className="content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24768" data-name="dropdown-menu-item">
+                      <button className="common-function-item content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24768" data-name="dropdown-menu-item" onClick={onNavigateForm} type="button">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24770" data-name="图标">
                           <Group8 className="relative shrink-0 size-[24px]" />
                         </div>
@@ -2043,8 +2043,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                             <p className="leading-[18px] overflow-hidden text-ellipsis">产品合作</p>
                           </div>
                         </div>
-                      </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24791" data-name="dropdown-menu-item">
+                      </button>
+                      <button className="common-function-item content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24791" data-name="dropdown-menu-item" onClick={onNavigateForm} type="button">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24793" data-name="图标">
                           <Group8 className="relative shrink-0 size-[24px]" property1="Frame 2147208044" />
                         </div>
@@ -2053,8 +2053,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                             <p className="leading-[18px] overflow-hidden text-ellipsis">报价评估</p>
                           </div>
                         </div>
-                      </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24814" data-name="dropdown-menu-item">
+                      </button>
+                      <button className="common-function-item content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24814" data-name="dropdown-menu-item" onClick={onNavigateForm} type="button">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24816" data-name="图标">
                           <Group8 className="relative shrink-0 size-[24px]" property1="receipt-minus" />
                         </div>
@@ -2063,8 +2063,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                             <p className="leading-[18px] overflow-hidden text-ellipsis">批量调价</p>
                           </div>
                         </div>
-                      </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24837" data-name="dropdown-menu-item">
+                      </button>
+                      <button className="common-function-item content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24837" data-name="dropdown-menu-item" onClick={onNavigateForm} type="button">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24839" data-name="图标">
                           <Group8 className="relative shrink-0 size-[24px]" property1="wallet-add" />
                         </div>
@@ -2073,8 +2073,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                             <p className="leading-[18px] overflow-hidden text-ellipsis">增购</p>
                           </div>
                         </div>
-                      </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24860" data-name="dropdown-menu-item">
+                      </button>
+                      <button className="common-function-item content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24860" data-name="dropdown-menu-item" onClick={onNavigateForm} type="button">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24862" data-name="图标">
                           <Group8 className="relative shrink-0 size-[24px]" property1="cards" />
                         </div>
@@ -2083,8 +2083,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                             <p className="leading-[18px] overflow-hidden text-ellipsis">新开商户</p>
                           </div>
                         </div>
-                      </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24883" data-name="dropdown-menu-item">
+                      </button>
+                      <button className="common-function-item content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24883" data-name="dropdown-menu-item" onClick={onNavigateForm} type="button">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24885" data-name="图标">
                           <Group8 className="relative shrink-0 size-[24px]" property1="save-add" />
                         </div>
@@ -2093,8 +2093,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                             <p className="leading-[18px] overflow-hidden text-ellipsis">邀请入驻</p>
                           </div>
                         </div>
-                      </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24906" data-name="dropdown-menu-item">
+                      </button>
+                      <button className="common-function-item content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24906" data-name="dropdown-menu-item" onClick={onNavigateForm} type="button">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24908" data-name="图标">
                           <Group8 className="relative shrink-0 size-[24px]" property1="bag-2" />
                         </div>
@@ -2103,8 +2103,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                             <p className="leading-[18px] overflow-hidden text-ellipsis">能力申请</p>
                           </div>
                         </div>
-                      </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24929" data-name="dropdown-menu-item">
+                      </button>
+                      <button className="common-function-item content-stretch flex flex-col gap-[4px] items-center justify-self-stretch min-w-[72px] px-[8px] relative rounded-[8px] self-stretch shrink-0" data-node-id="1:24929" data-name="dropdown-menu-item" onClick={onNavigateForm} type="button">
                         <div className="bg-[#f8f8fb] content-stretch flex items-center justify-center p-[8px] relative rounded-[6px] shrink-0" data-node-id="1:24931" data-name="图标">
                           <Group8 className="relative shrink-0 size-[24px]" property1="more" />
                         </div>
@@ -2113,13 +2113,13 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                             <p className="leading-[18px] overflow-hidden text-ellipsis">更多功能</p>
                           </div>
                         </div>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div className="bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_0.5px_rgba(20,41,79,0.02),0px_2px_2px_rgba(20,41,79,0.01)] flex flex-col gap-[16px] items-start p-[21px] relative rounded-[8px] shrink-0 w-full" data-node-id="1:25169" data-name="客户事件">
-                  <div className="relative shrink-0 w-full" data-node-id="1:25170" data-name="标题">
-                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[16px] items-center relative size-full">
+                <div className="home-list-module bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_0.5px_rgba(20,41,79,0.02),0px_2px_2px_rgba(20,41,79,0.01)] flex flex-col gap-[16px] items-start pb-[8px] pt-[20px] px-[12px] relative rounded-[8px] shrink-0 w-full" data-node-id="1:25169" data-name="客户事件">
+                  <div className="px-[8px] relative shrink-0 w-full" data-node-id="1:25170" data-name="标题">
+                    <div className="home-module-titlebar bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[16px] items-center relative size-full">
                       <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-node-id="1:25171" data-name="标题">
                         <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="1:25172" data-name="标题">
                           <div className="[word-break:break-word] flex flex-col font-['PingFang_SC:Bold'] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e2436] text-[18px] whitespace-nowrap" data-node-id="1:25173">
@@ -2138,8 +2138,8 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                     </div>
                   </div>
                   <div className="relative shrink-0 w-full" data-node-id="1:25204">
-                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[12px] items-start relative size-full">
-                      <div className="content-stretch flex flex-col gap-[4px] items-start justify-center overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:25205" data-name="event">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-0 items-start relative size-full">
+                      <div className="content-stretch flex flex-col gap-[4px] items-start justify-center overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:25205" data-name="event">
                         <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-node-id="1:25206">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:25208">
                             <p className="leading-[20px] overflow-hidden text-ellipsis">菲律宾Gcash收单跌0</p>
@@ -2185,7 +2185,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                       <div className="h-px relative shrink-0 w-full" data-node-id="1:25240" data-name="divider">
                         <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDivider} />
                       </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-start justify-center overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:25241" data-name="event">
+                      <div className="content-stretch flex flex-col gap-[4px] items-start justify-center overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:25241" data-name="event">
                         <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-node-id="1:25242">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:25244">
                             <p className="leading-[20px] overflow-hidden text-ellipsis">菲律宾Gcash收单跌0</p>
@@ -2231,7 +2231,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                       <div className="h-px relative shrink-0 w-full" data-node-id="1:25276" data-name="divider">
                         <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDivider} />
                       </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-start justify-center overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:25277" data-name="event">
+                      <div className="content-stretch flex flex-col gap-[4px] items-start justify-center overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:25277" data-name="event">
                         <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-node-id="1:25278">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:25280">
                             <p className="leading-[20px] overflow-hidden text-ellipsis">菲律宾Gcash收单跌0</p>
@@ -2277,7 +2277,7 @@ export default function Component1({ onNavigateDetail, onNavigateForm, onNavigat
                       <div className="h-px relative shrink-0 w-full" data-node-id="1:25312" data-name="divider">
                         <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDivider} />
                       </div>
-                      <div className="content-stretch flex flex-col gap-[4px] items-start justify-center overflow-clip relative rounded-[8px] shrink-0 w-full" data-node-id="1:25313" data-name="event">
+                      <div className="content-stretch flex flex-col gap-[4px] items-start justify-center overflow-clip px-[8px] py-[12px] relative rounded-[6px] shrink-0 transition-colors duration-150 hover:bg-[#f8f8fb] w-full" data-node-id="1:25313" data-name="event">
                         <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-node-id="1:25314">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Medium'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[14px] text-ellipsis whitespace-nowrap" data-node-id="1:25316">
                             <p className="leading-[20px] overflow-hidden text-ellipsis">菲律宾Gcash收单跌0</p>

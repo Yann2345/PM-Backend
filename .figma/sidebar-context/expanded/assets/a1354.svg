@@ -1,0 +1,27 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="18.4752" height="20.5083" viewBox="0 0 18.4752 20.5083" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Polygon 3" filter="url(#filter0_ii_0_16727)">
+<path d="M7.90427 0.357266C8.72934 -0.119088 9.74587 -0.119089 10.5709 0.357265L17.1419 4.151C17.9669 4.62735 18.4752 5.50769 18.4752 6.4604V14.0479C18.4752 15.0006 17.9669 15.8809 17.1419 16.3573L10.5709 20.151C9.74587 20.6274 8.72934 20.6274 7.90427 20.151L1.33333 16.3573C0.508265 15.8809 0 15.0006 0 14.0479V6.4604C0 5.50769 0.508264 4.62735 1.33333 4.151L7.90427 0.357266Z" fill="url(#paint0_linear_0_16727)"/>
+</g>
+<defs>
+<filter id="filter0_ii_0_16727" x="0" y="-0.266667" width="18.4752" height="20.9083" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-0.266667"/>
+<feGaussianBlur stdDeviation="0.2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.803922 0 0 0 0 0.360784 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_16727"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="0.266667"/>
+<feGaussianBlur stdDeviation="0.0666667"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_0_16727" result="effect2_innerShadow_0_16727"/>
+</filter>
+<linearGradient id="paint0_linear_0_16727" x1="9.2376" y1="-0.412535" x2="9.2376" y2="20.9208" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F6CB56"/>
+<stop offset="1" stop-color="#F9B833"/>
+</linearGradient>
+</defs>
+</svg>

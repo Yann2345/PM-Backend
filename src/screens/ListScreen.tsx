@@ -609,7 +609,7 @@ export default function Component17({ onNavigateDetail, onNavigateForm, onNaviga
                 searchQuery={searchQuery}
               />
             )}
-            <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:22046">
+            <div className={`${tableMode === "traditional" ? "-mt-[8px]" : ""} content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full`} data-node-id="1:22046">
               <div className={`${tableMode === "simple" ? "flex" : "hidden"} bg-white border border-[#edeef3] border-solid content-stretch drop-shadow-[0px_1px_0.5px_rgba(20,41,79,0.02),0px_2px_2px_rgba(20,41,79,0.01)] flex-col gap-[16px] items-start p-[20px] relative rounded-[8px] shrink-0 w-full`} data-node-id="1:22047">
                 <div className="content-stretch flex gap-[20px] items-center relative shrink-0 w-full" data-node-id="1:22049">
                   <div className="content-stretch flex flex-[1_0_0] gap-[16px] items-start min-w-[80px] overflow-clip relative rounded-[4px]" data-node-id="1:22050" data-name="数据统计卡片">

@@ -1654,7 +1654,7 @@ export default function LightDetailDesign() {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-white border-[#edeef3] border-solid border-t-5 content-stretch flex flex-col gap-[16px] items-start pb-[20px] pt-[25px] px-[20px] relative rounded-[8px] shadow-[0px_2px_4px_0px_rgba(18,50,108,0.01),0px_8px_16px_0px_rgba(18,50,108,0.02)] shrink-0 w-full" data-node-id="1012:47179" data-name="内容区域">
+                  <div className="bg-white border border-[#edeef3] border-solid content-stretch flex flex-col gap-[16px] items-start p-[21px] relative rounded-[8px] shadow-[0px_2px_4px_0px_rgba(18,50,108,0.01),0px_8px_16px_0px_rgba(18,50,108,0.02)] shrink-0 w-full" data-node-id="1012:47179" data-name="内容区域">
                     <div className="relative shrink-0 w-full" data-node-id="1012:47180">
                       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[8px] items-center relative size-full">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['PingFang_SC:Semibold'] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#1e2436] text-[18px] text-ellipsis whitespace-nowrap" data-node-id="1012:47181">
