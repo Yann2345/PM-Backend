@@ -6,7 +6,7 @@ export default function PrototypeMessage() {
   const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
-    const timeout = window.setTimeout(() => setIsVisible(false), 3000)
+    const timeout = window.setTimeout(() => setIsVisible(false), 5000)
     return () => window.clearTimeout(timeout)
   }, [])
 
